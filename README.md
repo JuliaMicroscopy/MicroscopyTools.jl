@@ -12,8 +12,6 @@ A collection of tools suited for Microscopy data processing.
 
 
 
-Julia Implementation of PtyLab
-
 
 [docs-dev-img]: https://img.shields.io/badge/docs-dev-pink.svg
 [docs-dev-url]: https://JuliaMicroscopy.github.io/PtyLab.jl/dev/
