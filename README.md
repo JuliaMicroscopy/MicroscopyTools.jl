@@ -22,5 +22,5 @@ A collection of tools suited for Microscopy data processing.
 [CI-img]: https://github.com/JuliaMicroscopy/MicroscopyTools.jl/actions/workflows/ci.yml/badge.svg
 [CI-url]: https://github.com/JuliaMicroscopy/MicroscopyTools.jl/actions/workflows/ci.yml
 
-[codecov-img]: https://codecov.io/gh/JuliaMicroscopy/MicroscopyTools.jl/branch/main/graph/badge.svg?token=OQ6BQCUFQB
+[codecov-img]: https://codecov.io/gh/JuliaMicroscopy/MicroscopyTools.jl/branch/main/graph/badge.svg?token=9CBLT9MAML
 [codecov-url]: https://codecov.io/gh/JuliaMicroscopy/MicroscopyTools.jl
