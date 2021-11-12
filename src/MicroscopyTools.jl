@@ -1,5 +1,7 @@
 module MicroscopyTools
 
-# Write your package code here.
+using Tullio
+
+include("binning.jl")
 
 end

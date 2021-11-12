@@ -1,13 +1,22 @@
-name = "MicroscopyTools.j"
+name = "MicroscopyTools"
 uuid = "5e5ac434-ba26-417f-ab6b-a88e74d16cdd"
 authors = ["roflmaostc - Felix Wechsler <fxw+git@mailbox.org> and contributors"]
 version = "0.1.0"
 
+[deps]
+ColorTypes = "3da002f7-5984-5a60-b8a6-cbb66c0b333f"
+FFTW = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
+Tullio = "bc48ee85-29a4-5162-ae0b-a64e1601d4bc"
+
 [compat]
 julia = "1"
+ColorTypes = "0.11"
+FFTW = "1.4"
+Tullio = "0.3"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Tullio = "bc48ee85-29a4-5162-ae0b-a64e1601d4bc"
 
 [targets]
-test = ["Test"]
+test = ["Test", "Tullio"]
