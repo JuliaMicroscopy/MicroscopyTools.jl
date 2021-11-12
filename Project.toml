@@ -1,0 +1,13 @@
+name = "MicroscopyTools.j"
+uuid = "5e5ac434-ba26-417f-ab6b-a88e74d16cdd"
+authors = ["roflmaostc - Felix Wechsler <fxw+git@mailbox.org> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
