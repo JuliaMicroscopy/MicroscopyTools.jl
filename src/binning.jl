@@ -50,20 +50,34 @@ function bin(arr::AbstractArray{T, N}, binning::NTuple{M, Int}) where {T, N, M}
     # largest size which is possible according to binning
     out = similar(arr, size(arr) .÷ binning)
 
+    out_indices = CartesianIndices(out) 
+    z = zero(T)
+    neighbours = CartesianIndices(binning)
     # iterate over the indices of the out put array
-    for inds in CartesianIndices(out)
+    #@inbounds and @simd make it faster
+    @inbounds @simd for inds in out_indices
         # now we start to sum within binning
-        sum = zero(T)
+        s = z
         # sum all neighbours
-        for neighbours in CartesianIndices(binning)
-            pos = binning .* Tuple(inds) .- Tuple(neighbours) .+ 1
-            sum += arr[pos...]
+        base_inds = binning .* Tuple(inds) .+ 1
+        for neighbour in neighbours 
+            pos = base_inds .- Tuple(neighbour) 
+            s += arr[pos...]
         end
         # assign the sum
-        out[inds] = sum
+        out[inds] = s
     end
     return out
 end
+
+
+# was slightly slower with function barrier
+# Function barrier.
+# """
+# function _bin_loop!(out::AbstractArray{T, N}, 
+#                     arr::AbstractArray{T, N}, 
+#                     binning::NTuple{N, Int}) where {T, N}
+## end
 
 
 """
