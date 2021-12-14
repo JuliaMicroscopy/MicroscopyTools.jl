@@ -46,30 +46,30 @@ with a scan pitch of `pitch` and stepping by `step`.
 The result is an array with `2*length(sz)` dimensions.
 Note that the scan needs to be commensurate, implying that `pitch` is an integer multiple of `step`.
 """
-function get_scan_pattern(dtype::DataType, sz, pitch=1, step=1; flatten_scan_dims=false)
-    if any(pitch .% step .!= 0)
-        error("Scan pitch needs to be commensurate with scan step")
-    end
-
-    sz = Tuple(sz)
-    pitch = Tuple(step)
-    step = Tuple(step)
-
-    scan_sz = pitch .÷ step;
-    res = zeros(dtype, (sz..., scan_sz...))
-    for scan_pos in regular_pattern(scan_sz)
-        for pos in regular_pattern(sz, step=step.*scan_pos, offset=pitch)
-            res[pos..., scan_pos...] = one(dtype)
-        end
-    end
-    if flatten_scan_dims
-        return flatten_trailing_dims(res, length(sz)+1);
-    else
-        return res
-    end
-end
-
-function get_scan_pattern(sz, pitch=1, step=1; flatten_scan_dims=false)
-    MicroscopyTools.get_scan_pattern(Float64, sz, pitch, step, 
-                                     flatten_scan_dims=flatten_scan_dims)
-end
+ #function get_scan_pattern(dtype::DataType, sz, pitch=1, step=1; flatten_scan_dims=false)
+ #    if any(pitch .% step .!= 0)
+ #        error("Scan pitch needs to be commensurate with scan step")
+ #    end
+ #
+ #    sz = Tuple(sz)
+ #    pitch = Tuple(step)
+ #    step = Tuple(step)
+ #
+ #    scan_sz = pitch .÷ step;
+ #    res = zeros(dtype, (sz..., scan_sz...))
+ #    for scan_pos in regular_pattern(scan_sz)
+ #        for pos in regular_pattern(sz, step=step.*scan_pos, offset=pitch)
+ #            res[pos..., scan_pos...] = one(dtype)
+ #        end
+ #    end
+ #    if flatten_scan_dims
+ #        return flatten_trailing_dims(res, length(sz)+1);
+ #    else
+ #        return res
+ #    end
+ #end
+ #
+ #function get_scan_pattern(sz, pitch=1, step=1; flatten_scan_dims=false)
+ #    MicroscopyTools.get_scan_pattern(Float64, sz, pitch, step, 
+ #                                     flatten_scan_dims=flatten_scan_dims)
+ #end
