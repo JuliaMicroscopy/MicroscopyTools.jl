@@ -10,4 +10,4 @@ makedocs(modules = [MicroscopyTools],
          ]
         )
 
-deploydocs(repo = "github.com/JuliaMicroscopy/MicroscopyTooly.jl.git", devbranch="main")
+deploydocs(repo = "github.com/JuliaMicroscopy/MicroscopyTools.jl.git", devbranch="main")
