@@ -1,14 +1,20 @@
 # MicroscopyTools.jl
 
-A collection of tools suited for Microscopy data processing.
-
-
+A collection of tools suited for Microscopy data processing. The package is at
+an early stage and over the time it will hopefully evolve to something more
+clear.
 
 
 | **Documentation**                       | **Build Status**                          | **Code Coverage**               |
 |:---------------------------------------:|:-----------------------------------------:|:-------------------------------:|
 | [![][docs-stable-img]][docs-stable-url] [![][docs-dev-img]][docs-dev-url] | [![][CI-img]][CI-url] | [![][codecov-img]][codecov-url] |
 
+
+## Installation
+The package is officially registered and can be installed with
+```
+julia> ]add MicroscopyTools
+```
 
 
 
