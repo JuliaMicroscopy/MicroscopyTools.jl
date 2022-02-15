@@ -1,0 +1,6 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+MicroscopyTools = "5e5ac434-ba26-417f-ab6b-a88e74d16cdd"
+
+[compat]
+Documenter = "0.27"

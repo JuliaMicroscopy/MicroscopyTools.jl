@@ -14,10 +14,10 @@ A collection of tools suited for Microscopy data processing.
 
 
 [docs-dev-img]: https://img.shields.io/badge/docs-dev-pink.svg
-[docs-dev-url]: https://JuliaMicroscopy.github.io/PtyLab.jl/dev/
+[docs-dev-url]: https://JuliaMicroscopy.github.io/MicroscopyTools.jl/dev/
 
 [docs-stable-img]: https://img.shields.io/badge/docs-stable-darkgreen.svg
-[docs-stable-url]:  https://JuliaMicroscopy.github.io/PtyLab.jl/stable/
+[docs-stable-url]:  https://JuliaMicroscopy.github.io/MicroscopyTools.jl/stable/
 
 [CI-img]: https://github.com/JuliaMicroscopy/MicroscopyTools.jl/actions/workflows/ci.yml/badge.svg
 [CI-url]: https://github.com/JuliaMicroscopy/MicroscopyTools.jl/actions/workflows/ci.yml
