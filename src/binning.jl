@@ -24,7 +24,7 @@ julia> bin(ones((4, 4)), (2, 4))
 julia> bin([1,2,3,4,5], (2,))
 2-element Vector{Int64}:
  3
- 5
+ 7
 ```
 
 ## You can leave out trailing 1s
