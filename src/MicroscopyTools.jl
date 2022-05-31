@@ -14,5 +14,6 @@ include("binning.jl")
 include("calculation_tools.jl")
 include("utils.jl")
 include("grid_generation.jl")
+include("psf_extraction.jl")
 
 end

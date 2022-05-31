@@ -1,11 +1,11 @@
-## calculatoin_tools.jl
+## calculation_tools.jl
 export pack
 export radial_mean, Δ_phase
 export moment_proj_normed
 export gaussf, remove_background
 
 """
-    radial_mean(data; maxbin=nothing, bin_step=nothing, pixelsize=nothing)
+    radial_mean(data; maxbin=nothing, bin_step=nothing, offset=CtrFT, scale=nothing)
 
 Calculates the radial mean of a dataset `data`.
 Returns a tuple of the radial_mean and the bin_centers.
@@ -14,7 +14,8 @@ Returns a tuple of the radial_mean and the bin_centers.
 + `data`: data to radially average
 + `maxbin`: a maximum bin value
 + `bin_step`: optionally defines the step between the bins
-
++ `offset`: defines the center position of the radial mean calculation
++ `scale`: an optional scale factor such as the pixelsize as a vector for each dimension.
 
 ## Examples
 ```julia-repl
