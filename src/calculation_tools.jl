@@ -2,7 +2,6 @@
 export pack
 export radial_mean, Δ_phase
 export moment_proj_normed
-export gaussf, remove_background
 
 """
     radial_mean(data; maxbin=nothing, bin_step=nothing, pixelsize=nothing)
@@ -99,4 +98,3 @@ julia> MicroscopyTools.moment_proj_normed([1 3; 2 4], 2, pdims=(1,))
 function moment_proj_normed(data, h=3; pdims=3)
     moment_proj(data, h, pdims=pdims) ./ (moment_proj(data,2, pdims=pdims) .^((h-1)/2))
 end
-

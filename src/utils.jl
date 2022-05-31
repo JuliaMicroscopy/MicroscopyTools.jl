@@ -1,5 +1,3 @@
-export cart_to_mat, mat_to_vec
-
 """
     soft_theta(x::T, k=T(1)) where T
 
@@ -54,30 +52,4 @@ function soft_delta_pw(x::T, ϵ=T(0.01)) where T
     else
         (one(T) + cos(x * (T(π) / ϵ))) / 2
     end
-end
-
-"""
-    cart_to_mat(cart)
-
-converts a list of cartesian indices to a matrix with the first dimension corresponding to the dimension direction.
-    
-"""
-function cart_to_mat(cart)
-    all_max_vec = zeros(length(cart[1]), length(cart))
-    n=1
-    for idx in cart
-        all_max_vec[:,n] = [Tuple(idx)...] 
-        n += 1
-    end
-    return all_max_vec
-end
-
-"""
-    mat_to_vec(mat)
-
-converts a 2D matrix to a vector of vectors, one vector for each column.
-
-"""
-function mat_to_vec(mat)
-    [mat[:,n] for n=1:size(mat,2)]
 end
