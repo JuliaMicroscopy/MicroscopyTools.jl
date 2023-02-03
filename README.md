@@ -1,8 +1,9 @@
 # MicroscopyTools.jl
 
-A collection of tools suited for Microscopy data processing. The package is at
+A collection of tools suited for Microscopy data processing (e.g. binning). The package is at
 an early stage and over the time it will hopefully evolve to something more
 clear.
+Please check the documentation for available functionality.
 
 
 | **Documentation**                       | **Build Status**                          | **Code Coverage**               |
