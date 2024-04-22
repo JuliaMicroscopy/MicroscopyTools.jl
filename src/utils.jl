@@ -1,3 +1,5 @@
+export soft_delta, soft_delta_pw, soft_theta, soft_theta_pw
+
 """
     soft_theta(x::T, k=T(1)) where T
 
