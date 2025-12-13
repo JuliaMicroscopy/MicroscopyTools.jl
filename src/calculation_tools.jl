@@ -92,7 +92,7 @@ Performs a projection over the `h`-th moment of the data along dimension(s) `pdi
 ```jldoctest
 julia> MicroscopyTools.moment_proj_normed([1 3; 2 4], 2, pdims=(1,))
 1×2 Matrix{Float64}:
- 0.5  0
+ 0.5  0.5
 ```
 """
 function moment_proj_normed(data, h=3; pdims=3)

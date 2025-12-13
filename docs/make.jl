@@ -10,4 +10,10 @@ makedocs(modules = [MicroscopyTools],
          ]
         )
 
-deploydocs(repo = "github.com/JuliaMicroscopy/MicroscopyTools.jl.git", devbranch="main")
+deploydocs(
+    repo = "git@github.com:JuliaMicroscopy/MicroscopyTools.jl.git",
+    branch = "gh-pages",
+    devbranch = "main",
+    target = "build",
+    deploy_config = Documenter.GitHubActions(),
+)

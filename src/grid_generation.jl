@@ -12,7 +12,7 @@ Returns a generator with tuples that point to a regular grid pattern.
  ## Examples
 ```jldoctest
 julia> MicroscopyTools.regular_pattern((3,3))
-Base.Generator{CartesianIndices{2, Tuple{Base.OneTo{Int64}, Base.OneTo{Int64}}}, MicroscopyTools.var"#46#47"{Int64, Int64}}(MicroscopyTools.var"#46#47"{Int64, Int64}(1, 1), CartesianIndex{2}[CartesianIndex(1, 1) CartesianIndex(1, 2) CartesianIndex(1, 3); CartesianIndex(2, 1) CartesianIndex(2, 2) CartesianIndex(2, 3); CartesianIndex(3, 1) CartesianIndex(3, 2) CartesianIndex(3, 3)])
+Base.Generator{CartesianIndices{2, Tuple{Base.OneTo{Int64}, Base.OneTo{Int64}}}, MicroscopyTools.var"#21#22"{Int64, Int64}}(MicroscopyTools.var"#21#22"{Int64, Int64}(1, 1), CartesianIndices((3, 3)))
 
 julia> collect(MicroscopyTools.regular_pattern((3,3)))
 3×3 Matrix{Tuple{Int64, Int64}}:
