@@ -1,6 +1,8 @@
 [deps]
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 MicroscopyTools = "5e5ac434-ba26-417f-ab6b-a88e74d16cdd"
+OpenSSL_jll = "458c3c95-2e84-50aa-8efc-19380b2a3a95"
+Downloads = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
 
 [compat]
 Documenter = "0.27, 1"
