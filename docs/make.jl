@@ -9,7 +9,8 @@ makedocs(modules = [MicroscopyTools],
             "Binning" => "binning.md",
             "Calculation Tools" => "calculation_tools.md",
             "Grid Generation" => "grid_generation.md",
-         ]
+         ],
+         doctest = false
         )
 
 deploydocs(
