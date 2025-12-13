@@ -33,7 +33,7 @@ end
     soft_delta(x::T, k=T(1)) where T
 
 This is a smooth version of the delta function that uses a soft peak and is differentiable.
-Based on a Gauss function.
+Based on a Gaussian function.
 A larger `k` makes the edge harder.
 """
 function soft_delta(x::T, k=T(1)) where T
@@ -45,7 +45,7 @@ end
     soft_delta_pw(x::T, ϵ=T(1)) where T
 
 This is a smooth version of the delta function that uses a soft peak and is differentiable.
-Based on a Gauss function.
+Based on a cosine function.
 A larger `k` makes the edge harder.
 """
 function soft_delta_pw(x::T, ϵ=T(0.01)) where T

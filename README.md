@@ -1,10 +1,15 @@
 # MicroscopyTools.jl
 
-A collection of tools suited for Microscopy data processing (e.g. binning). The package is at
-an early stage and over the time it will hopefully evolve to something more
-clear.
-Please check the documentation for available functionality.
+A collection of performant tools suited for processing of Microscopy data such as 
+- binning of gridded data by integer factors
+- generation of scanning grids
+- momentum projections (useful for blinking data)
+- soft thresholding functions that are differentiable
 
+Please check the documentation for currently available functionality.
+
+Since such functions are useful in the context of other packages or scripts, they are
+bundled up here.
 
 | **Documentation**                       | **Build Status**                          | **Code Coverage**               |
 |:---------------------------------------:|:-----------------------------------------:|:-------------------------------:|
