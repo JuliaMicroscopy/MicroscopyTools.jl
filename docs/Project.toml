@@ -1,6 +1,7 @@
 [deps]
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 MicroscopyTools = "5e5ac434-ba26-417f-ab6b-a88e74d16cdd"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 
 [compat]
 Documenter = "0.27, 1"

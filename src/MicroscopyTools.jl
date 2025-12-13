@@ -1,9 +1,9 @@
 module MicroscopyTools
 
+using Statistics
 using Tullio
 using FFTW
 using NDTools
-using Statistics
 using IndexFunArrays
 
 include("binning.jl")

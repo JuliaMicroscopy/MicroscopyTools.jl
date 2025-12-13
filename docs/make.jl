@@ -7,6 +7,8 @@ makedocs(modules = [MicroscopyTools],
          pages = Any[
             "MicroscopyTools.jl" => "index.md",
             "Binning" => "binning.md",
+            "Calculation Tools" => "calculation_tools.md",
+            "Grid Generation" => "grid_generation.md",
          ]
         )
 
